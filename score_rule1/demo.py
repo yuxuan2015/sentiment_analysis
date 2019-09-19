@@ -21,8 +21,8 @@ degree_dict = file2dict(degreeword_path)
 sentiment_dict = file2dict(sentimentword_path)
 
 
-text = '还可以，比预计时间晚了一小时到，不过还好'
-#text = '不太好吃，相当难吃，要是米饭再多点儿就好了'
+#text = '还可以，比预计时间晚了一小时到，不过还好'
+text = '不太好吃，相当难吃，要是米饭再多点儿就好了'
 # text = "剁椒鸡蛋好咸,土豆丝很好吃"
 print('%s的情感值为：%.4f' % (text, sents_score(text, sentiment_dict, degree_dict, notword)))
 print(f'{text}\n情感值：{sents_score(text, sentiment_dict, degree_dict, notword)}')

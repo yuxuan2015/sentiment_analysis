@@ -67,5 +67,6 @@ def text_polarity(s):
 
 ##测试例子
 if __name__ == "__main__":
-	text = "这个黑心老板太恶心了"
+	text = "不太好吃，相当难吃，要是米饭再多点儿就好了"
+	print(predict(text))
 	print(text_polarity(text))
